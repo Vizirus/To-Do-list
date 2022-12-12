@@ -1,0 +1,42 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:To_Do_List"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="To_Do_List.Window1"
+        mc:Ignorable="d"
+        Title="Add new task screen" ResizeMode="CanMinimize" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--This is function elements-->
+            <Button x:Name="AddButton" Grid.Column="1" Grid.Row="3" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Add" Click="AddButton_Click"/>
+            <TextBox x:Name="TaskNameTextBox" Grid.Row="0" Grid.Column="1" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left">
+                
+            </TextBox>
+            <DatePicker x:Name="DatePicker" Grid.Row="1" Grid.Column="1" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+           
+            <ComboBox x:Name="StatusComboBox" Grid.Row="2" Grid.Column="1" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left">
+                
+
+            </ComboBox>
+
+            <!--This is help elements-->
+            <TextBlock Text="Write a task name" Grid.Column="0" Grid.Row="0" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+            <TextBlock Text="Choose a date when you want finish a task" Grid.Column="0" Grid.Row="1" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+            <TextBlock Text="Choose the status of task" Grid.Column="0" Grid.Row="2" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+            <TextBlock Text="Add new task" Grid.Column="0" Grid.Row="3" Width="300" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+
+        </Grid>
+    </Grid>
+</Window>
